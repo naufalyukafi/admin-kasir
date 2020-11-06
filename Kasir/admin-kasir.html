@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Website</title>
+    <link rel="stylesheet" href="../css/admin-kasir.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="title">Kasir App</div>
+        <a href="./login.html"><button class="logout">Logout</button></a>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault()" autocomplete="off">
+                    <div>
+                        <label>Emp Code</label> <br><br>
+                        <!-- <input type="text" name="empCode" id="empCode"> -->
+                        <select name="empCode" id="empCode" required style="width: 100%; padding-top: 10px; padding-bottom: 10px; outline: none;">
+                            <option value="A1S52">A1S52</option>
+                            <option value="UHG32">UHG32</option>
+                            <option value="FN721">FN721</option>
+                        </select> 
+                    </div> <br><br>
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Status Pembeli</label> <label class="validation-radio hide" id="validationRadio" style="color: red">This field is required.</label>
+                         <br><br>
+                        <input type="radio" name="member" value="member" id="member"> Member<br>
+                        <input type="radio" name="member" value="nonMember" id="member"> Non Member<br>
+                    </div> <br><br>
+                    <div>
+                        <select name="jenisMakanan" id="jenisMakanan" required style="width: 100%; padding-top: 10px; padding-bottom: 10px; outline: none;">
+                            <option value="Nasi Padang">Nasi Padang - Rp.100,000</option>
+                            <option value="Nasi Goreng">Nasi Goreng - Rp.50,000</option>
+                            <option value="Mie Goreng">Mie Goreng - Rp.45,000</option>
+                        </select> 
+                    </div> <br><br>
+                    <div>
+                        <label>Jumlah Pesanan</label>
+                        <input type="number" name="jumlahPesanan" id="jumlahPesanan" value="0">
+                    </div> <br><br>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit" onclick="onFormSubmit()">
+                    </div>
+                </form>    
+            </td>
+    </table>
+    <table>
+        <td>
+            <table class="list" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>Emp Code</th>
+                        <th>Full Name</th>  
+                        <th>Status</th>
+                        <th>Jenis Makanan</th>
+                        <th>Jumlah Pesanan</th>
+                        <th id="totalBelanja">Total Belanja</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </table>
+    <script src="script3.js"></script>
+</body> 
+</html>

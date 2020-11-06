@@ -1,0 +1,84 @@
+body > table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+table.list {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  outline: none;
+}
+tr:nth-child(even),
+table.list thead > tr {
+  background-color: orange;
+  color: whitesmoke;
+}
+
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  /* color: white; */
+}
+
+input[type='submit'] {
+  width: 30%;
+  background-color: #ff9800;
+  /* color: #; */
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+form div.form-action-buttons {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.logout {
+  background-color: orange;
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline-style: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.logout:hover {
+  background-color: black;
+  color: white;
+}
