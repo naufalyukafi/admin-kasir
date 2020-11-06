@@ -1,0 +1,219 @@
+/* navbar sini */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+@keyframes ani1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header .header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header .brand-name {
+  /* background-color: red; */
+  padding: 0 15px;
+}
+.header .brand-name a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.header .nav {
+  /* background-color: orange; */
+  padding: 0 15px;
+}
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  padding: 25px 0;
+  display: block;
+  transition: all 0.5s ease;
+}
+.header .nav ul li a:hover {
+  color: #ff9800;
+}
+*/
+
+/* content */
+.content {
+  margin-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  float: left;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#sidebar {
+  position: fixed;
+  width: 350px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(41, 39, 53);
+  padding-top: 50px;
+  font-family: 'Rubik';
+}
+.sidebar_profile {
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik';
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0;
+}
+.sidebar_list a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Rubik';
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+.sidebar_list a:hover {
+  background-color: rgb(68, 66, 66);
+  color: orange;
+  font-weight: bold;
+}
+.img_profile {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.sidebar_profile p {
+  padding: 8px;
+}
+span {
+  color: orange;
+  font-weight: bold;
+}
+p.home_title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.home_about {
+  text-align: center;
+  font-size: 35px;
+  /* margin-top: 30px; */
+  /* border: 1px solid orange; */
+  padding: 20px;
+}
+.home_desc {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.portfolio_title,
+.contact_title {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid orange;
+  padding: 20px;
+}
+.card_portfolio img {
+  width: 600px;
+}
+
+.card_portfolio {
+  width: 64%;
+  border: 1px solid orange;
+  margin-top: 50px;
+  margin-left: 150px;
+  text-align: center;
+}
+.card_portfolio p.card_title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+.card_portfolio p.card_desc {
+  padding: 5px;
+}
+
+#content {
+  margin-left: 360px;
+  padding: 0 25px;
+}
+
+#contact {
+  height: 200px;
+}
+.input_contact {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+input {
+  padding: 10px;
+}
+
+.button-github {
+  color: red;
+}
+
+/* border tiap component */
+#home {
+  border: 1px solid black;
+}
+#about {
+  border: 1px solid black;
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+@keyframes ani1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* header */
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header .brand-name {
+  /* background-color: red; */
+  padding: 0 15px;
+}
+.header .brand-name a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.header .nav {
+  /* background-color: orange; */
+  padding: 0 15px;
+}
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 25px 0;
+  display: block;
+  transition: all 0.5s ease;
+}
+.header .nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* home section */
+.home-section {
+  min-height: 100vh;
+  background-image: url('../img/tentang-lestaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+.home-section::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: -1;
+}
+.home-section .shape1 {
+  position: absolute;
+  height: 100px;
+  width: 30px;
+  border: 2px solid #ff9800;
+  right: 22%;
+  top: 20%;
+  animation: ani1 3s linear infinite;
+}
+.home-section .shape2 {
+  position: absolute;
+  height: 100px;
+  width: 30px;
+  border: 2px solid #ff9800;
+  left: 22%;
+  top: 20%;
+  animation: ani1 3s linear infinite;
+}
+
+.home-section .row {
+  min-height: 100vh;
+}
+.home-section .home-content {
+  /* background-color: red; */
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.home-content {
+  margin-top: 100px;
+}
+.home-section .home-content h4 {
+  font-size: 20px;
+  color: #fff;
+}
+.home-section .home-content h1 {
+  font-size: 30px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+.home-section .scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  height: 30px;
+  width: 30px;
+  margin-left: -15px;
+  animation: scrollDown 2s ease infinite;
+}
+
+@keyframes scrollDown {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.home-section .scroll-down img {
+  width: 25px;
+  display: block;
+}
+
+.home-desc {
+  color: white;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.home-desc #soal {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+.home-desc td,
+#soal th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.home-desc #soal tr:hover {
+  background-color: black;
+}
+
+.home-desc #soal th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: orange;
+  color: white;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
