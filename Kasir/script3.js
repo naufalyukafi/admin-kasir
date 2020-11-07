@@ -1,3 +1,32 @@
+var saveAcces = [
+    {
+        username: "admin", 
+        password: "admin"
+    },
+    {
+        username: "user", 
+        password: "user"
+    },
+    {
+        username: "yukafi", 
+        password: "yukafi"
+    },
+]
+
+//login
+function getAcces(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    // console.log("username anda adalah "+username+" password anda adalah "+password)
+    for (let i = 0; i < saveAcces.length; i++) {
+        if(username === saveAcces[i].username && password === saveAcces[i].password){
+            alert(username + " logeddin")
+            return window.location.href = "admin-kasir.html"
+        }
+    }
+    alert("incorect password")
+}
+
 function onFormSubmit(){
     var formData = readFormData();
     newRecordData(formData);
