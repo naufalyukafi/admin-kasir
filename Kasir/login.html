@@ -26,17 +26,18 @@
     </header>   
     <div style="margin-top: 56px;">
     <h1 class="title-card">ADMIN KASIR</h1>
-    <div style="text-align: center; color: red;">Hanya login buat style saja,<br/> (Klik login untuk mengolah data perhitungan admin)</div>
+    <div style="text-align: center; color: red;">Username menggunakan user dan Password menggunakan user</div>
     <br>
     <div class="form-card">
-        <form >
-            <input type="text" placeholder="username"><br>
-            <input type="password" placeholder="password"><br>
-            <a href="./admin-kasir.html">
-                <input type="button" value="login" class="input-button">
-            </a>
+        <form onsubmit="reload">
+            <input type="text" placeholder="username" id="username"><br>
+            <input type="password" placeholder="password" id="password"><br>
+            <!-- <a href="./admin-kasir.html"> -->
+                <input type="button" value="login" class="input-button" onclick="getAcces()">
+            <!-- </a> -->
         </form>
       </div>     
     </div>
+    <script src="./script3.js"></script>
 </body>
 </html>
